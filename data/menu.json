@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Burger",
+      "description": "Cooked medium-well and served on a toasted bun with lettuce, tomato, onion, pickle, mayo, and mustard. Gluten-free bun available upon request.",
+      "price": 9.25,
+      "image": "assets/images/menu/burger.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Cheeseburger",
+      "description": "Cooked medium-well and served on a toasted bun with lettuce, tomato, onion, pickle, mayo, and mustard. Gluten-free bun available upon request.",
+      "price": 9.95,
+      "image": "assets/images/menu/cheeseburger.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bacon Cheeseburger",
+        "description": "Cooked medium-well and served on a toasted bun with lettuce, tomato, onion, pickle, mayo, and mustard. Gluten-free bun available upon request.",
+        "price": 11.95,
+        "image": "assets/images/menu/bacon_burger.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Chile Cheeseburger",
+        "description": "Cooked medium-well and served on a toasted bun with lettuce, tomato, onion, pickle, mayo, and mustard. Gluten-free bun available upon request.",
+        "price": 11.95,
+        "image": "assets/images/menu/chile_cheeseburger.jpg"
+    }
+  ]

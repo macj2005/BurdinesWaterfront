@@ -18,18 +18,97 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
+            const { useState, useEffect } = React;
+
+            function MenuItem({ item }) {
+                return (
+                    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col md:flex-row items-center">
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            className="w-full md:w-1/3 h-48 object-cover rounded-md mb-4 md:mb-0 md:mr-4"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h3 className="text-xl font-semibold">{item.name}</h3>
+                            <p className="text-gray-600">{item.description}</p>
+                            <p className="text-lg font-bold mt-2">${item.price.toFixed(2)}</p>
+                        </div>
+                    </div>
+                );
+            }
+
+            function Menu() {
+                const [menuItems, setMenuItems] = useState([]);
+
+                useEffect(() => {
+                    fetch("/data/menu.json")
+                        .then(response => response.json())
+                        .then(data => setMenuItems(data))
+                        .catch(error => console.error("Error loading menu:", error));
+                }, []);
+
+                return (
+                    <section id="menu" className="py-12 px-4 bg-gray-100">
+                        <h2 className="text-3xl font-bold text-center mb-8">Menu</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                            {menuItems.length > 0 ? (
+                                menuItems.map(item => <MenuItem key={item.id} item={item} />)
+                            ) : (
+                                <p className="text-center">Loading menu...</p>
+                            )}    
+                        </div>
+                    </section>
+                );
+            }
+
+            function About() {
+                return (
+                    <section id="about" className="py-12 px-4">
+                        <h2 className="text-3xl font-bold text-center mb-8">Find Us</h2>
+                        <div className="max-w-3xl mx-auto text-center">
+                            <p className="font-semibold">1200 Oceanview Ave., Marathon, FL 33050</p>
+                            <p className="font-semibold">Bar & Grill: (305) 743-9204</p>
+                            <p className="font-semibold">Marina: (305) 743-5317</p>
+                            <img
+                                src="assets/images/restaurant/waterfront_full.webp"
+                                alt="Restaurant"
+                                className="mt-6 w-full h-64 object-cover rounded-md"
+                                loading="lazy"
+                            />
+                        </div>
+                    </section>
+                );
+            }
+
             function App() {
                 return (
                     <div>
                         <header className="bg-gray-800 text-white p-4">
-                            <h1 className="text-3xl font-bold text-center">
-                                Burdine's Waterfront
-                            </h1>
+                            <h1 className="text-3xl font-bold text-center">Burdine's Waterfront</h1>
+                            <h1 className="text-2xl font-semibold text-center">Marina | Bar & Grill</h1>
+                            <nav className="mt-2 text-center">
+                                <a href="#home" className="mx-2 hover:underline">Home</a>
+                                <a href="#about" className="mx-2 hover:underline">Find Us</a>
+                                <a href="#menu" className="mx-2 hover:underline">Menu</a>
+                            </nav>
                         </header>
-                        <section className="bg-cover bg-center h-96 flex items-center justify-center text-white"
-                                 style={{ backgroundImage: "url('assets/images/restaurant/waterfront_full3.jpg')" }}>
-                            <h2 className="text-4xl font-bold">Marina | Bar & Grill</h2>
-                        </section>
+                        <main>
+                            <section 
+                                id="home"
+                                className="bg-cover bg-center h-96 flex items-center justify-center text-white relative"
+                                style={{ backgroundImage: "url('assets/images/restaurant/waterfront_full3.jpg')" }}
+                            >
+                                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                                <h2 className="text-4xl font-bold font-serif relative z-10 text-shadow-md">Serving the Keys for over 30 years</h2>
+                                
+                            </section>
+                            <About />
+                            <Menu />
+                        </main>
+                        <footer className="bg-gray-800 text-white text-center p-4">
+                            <p>&copy; 2025 Burdine's Waterfront. All rights reserved.</p>
+                        </footer>
                     </div>
                 );
             }
