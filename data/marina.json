@@ -3,36 +3,36 @@
       "id": 1,
       "title": "Bait and Ice",
       "description": "Fishing supplies or your fishing needs.",
-      "logo": ""
+      "logo": "assets/images/marina/fish.svg"
     },
     {
       "id": 2,
       "title": "Quality Fuels",
       "description": "Non-ethanol 90 Octane and diesel fuels available.",
-      "logo": ""
+      "logo": "assets/images/marina/fuel.svg"
     },
     {
       "id": 3,
       "title": "Snacks & Drinks",
       "description": "Enjoy our stocked ship store for easy access to snacks and drinks.",
-      "logo": ""
+      "logo": "assets/images/marina/soda.svg"
     },
     {
       "id": 4,
       "title": "Dock Side",
       "description": "Approach/Dockside depth of 10.0 ft/7.0 ft.",
-      "logo": ""
+      "logo": "assets/images/marina/boat.svg"
     },
     {
       "id": 5,
       "title": "Friendly Facilities",
       "description": "Laundry, shower, and restrooms available.",
-      "logo": ""
+      "logo": "assets/images/marina/laundry.svg"
     },
     {
       "id": 6,
       "title": "Pet Friendly",
       "description": "We love your well-mannered pets! Watch out for our precious Manatees!",
-      "logo": ""
+      "logo": "assets/images/marina/paw.svg"
     }
   ]
