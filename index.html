@@ -127,7 +127,7 @@
                                 }`}
                             >
                                 <img
-                                    src="/assets/images/arrow-back.svg"
+                                    src="assets/images/arrow-back.svg"
                                     alt="Previous items"
                                     className="w-6 h-6 [filter:invert(100%)]"
                                 />
@@ -144,7 +144,7 @@
                                 }`}
                             >
                                 <img
-                                    src="/assets/images/arrow-forward.svg"
+                                    src="assets/images/arrow-forward.svg"
                                     alt="Next items"
                                     className="w-6 h-6 [filter:invert(100%)]"
                                 />
@@ -208,7 +208,7 @@
                 const [marinaItems, setMarinaItems] = React.useState([]);
 
                 React.useEffect(() => {
-                    fetch("/data/marina.json")
+                    fetch("data/marina.json")
                         .then(response => response.json())
                         .then(data => setMarinaItems(data))
                         .catch(error => console.error("Error loading marina data:", error));
