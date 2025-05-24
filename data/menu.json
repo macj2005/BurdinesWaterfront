@@ -7,14 +7,14 @@
         "name": "Fresh Hand–Cut Fries",
         "description": "Sprinkled with our famous fry dust.",
         "price": 8.95,
-        "image": ""
+        "image": "assets/images/menu/fries.jpg"
       },
       {
         "id": 2,
         "name": "Homemade Hushpuppies",
         "description": "With shredded cheddar jack cheese & raspberry jalapeno dipping sauce. Ask about additional options.",
         "price": 10.95,
-        "image": ""
+        "image": "assets/images/menu/hushpuppies.jpg"
       }
     ]
   },
@@ -40,7 +40,7 @@
         "name": "Bacon Cheeseburger",
         "description": "Cooked medium-well & served on a toasted bun topped with lettuce, tomato, onion, pickles, mayo & mustard. Gluten-Free bun available on request.",
         "price": 12.95,
-        "image": "assets/images/menu/bacon_burger.jpg"
+        "image": "assets/images/menu/bacon_cheeseburger.jpg"
       },
       {
         "id": 6,
@@ -54,21 +54,21 @@
         "name": "Patty Melt",
         "description": "Our burger with grilled onions, double cheddar cheese & tomato on butter grilled rye bread with our special blend 1000 island dressing. Sub grilled or blackened chicken + $2.00, Mahi or shrimp + $2.95.",
         "price": 14.95,
-        "image": ""
+        "image": "assets/images/menu/patty_melt.jpg"
       },
       {
         "id": 8,
         "name": "Bacon Swiss Burger",
         "description": "Topped with melted Swiss cheese, applewood bacon served on a toasted bun with baby greens, tomato, grilled onion & garlic mayo.",
         "price": 14.95,
-        "image": ""
+        "image": "assets/images/menu/bacon_swiss.jpg"
       },
       {
         "id": 9,
         "name": "Shrimp Burger",
         "description": "Lots of juicy minced shrimp with fresh veggies, herbs, spices & eggs. Only breading is toasted bun! Baby greens, tomato, onion & homemade tartar sauce.",
         "price": 18.95,
-        "image": ""
+        "image": "assets/images/menu/shrimp_burger.jpg"
       },
       {
         "id": 10,
@@ -82,56 +82,56 @@
         "name": "Shrimp Sandwich",
         "description": "Your Way – Fried, Grilled or Blackened on a bun with lettuce, tomato, onion & homemade tartar sauce. Add Cheese + $2.00 or Green Chili + $2.95.",
         "price": 16.95,
-        "image": ""
+        "image": "assets/images/menu/shrimp_sandwich.jpg"
       },
       {
         "id": 12,
         "name": "Shrimp or Mahi Reuben",
         "description": "Juicy grilled fish or shrimp on a butter rye bread topped with tangy sauerkraut, special blend dressing & melted Swiss cheese.",
         "price": 18.95,
-        "image": ""
+        "image": "assets/images/menu/shrimp_reuben.jpg"
       },
       {
         "id": 13,
         "name": "Mahi Sandwich",
         "description": "Your Way – Fried, Grilled or Blackened on a bun with lettuce, tomato & onion. Topped with tartar sauce. Add cheese + $2.00 or Green Chili + $2.95.",
         "price": 15.95,
-        "image": ""
+        "image": "assets/images/menu/mahi_sandwich.jpg"
       },
       {
         "id": 14,
         "name": "Chicken Sandwich",
         "description": "Your Way – Fried, Grilled or Blackened on a bun with lettuce, tomato & onion. Topped with mayo. Add cheese + $2.00 or Green Chili + $2.95.",
         "price": 13.95,
-        "image": ""
+        "image": "assets/images/menu/chicken_sandwich.jpg"
       },
       {
         "id": 15,
         "name": "Chicken Club",
         "description": "Classic style club with bacon, lettuce, tomato & mayo on a toasted multi-grain or try it as a wrap ($14.95).",
         "price": 15.95,
-        "image": ""
+        "image": "assets/images/menu/chicken_club.jpg"
       },
       {
         "id": 16,
         "name": "Three Cheese Keys Steak",
         "description": "With fresh grilled garlic & onions topped with three different cheeses & served on a toasted ciabatta with baby greens, tomato & homemade garlic mayo.",
         "price": 17.95,
-        "image": ""
+        "image": "assets/images/menu/three_cheese.jpg"
       },
       {
         "id": 17,
         "name": "Tuna Melt",
         "description": "Homemade yellowfin tuna salad on a toasted rye with fresh mix of ingredients with sliced tomato & melted cheese. Make it a salad instead with baby greens & pita points served in a tomato star ($21.95).",
         "price": 18.95,
-        "image": ""
+        "image": "assets/images/menu/tuna_melt.jpg"
       },
       {
         "id": 18,
         "name": "Tuna Steak Sandwich",
         "description": "Thick tuna filet grilled or blackened on a toasted bun with garlic mayo, lettuce, tomato & onion.",
         "price": 20.95,
-        "image": ""
+        "image": "assets/images/menu/tuna_steak_sandwich.jpg"
       }
     ]
   },
@@ -143,35 +143,35 @@
         "name": "Shrimp Plate",
         "description": "Grilled, Blackened or Fried! Served with our homemade hushpuppies & slaw. Make it double + $15.00.",
         "price": 18.95,
-        "image": ""
+        "image": "assets/images/menu/fried_shrimp.jpg"
       },
       {
         "id": 20,
         "name": "Mahi Plate",
         "description": "Grilled, Blackened or Fried! Served with our homemade hushpuppies & slaw.",
         "price": 17.95,
-        "image": ""
+        "image": "assets/images/menu/grilled_mahi.jpg"
       },
       {
         "id": 21,
         "name": "Shrimp & Fish Combo Plate",
         "description": "Grilled, Blackened or Fried! Served with our homemade hushpuppies & slaw.",
         "price": 29.95,
-        "image": ""
+        "image": "assets/images/menu/shrimp_combo.jpg"
       },
       {
         "id": 22,
         "name": "Chicken Plate",
         "description": "Grilled, Blackened or Fried! Served with our homemade hushpuppies & slaw.",
         "price": 14.95,
-        "image": ""
+        "image": "assets/images/menu/chicken_plate.jpg"
       },
       {
         "id": 23,
         "name": "Bacon Wrapped BBQ Shrimp",
         "description": "Succulent shrimp wrapped with applewood smoked bacon brushed with our natural hickory whiskey BBQ sauce & served with black beans & rice or hushpuppies & coleslaw.",
         "price": 22.95,
-        "image": ""
+        "image": "assets/images/menu/bbq_shrimp.jpg"
       },
       {
         "id": 24,
@@ -190,14 +190,14 @@
         "name": "Caesar Pita",
         "description": "Your choice of protein cooked Your Way! Grilled, Blackened or Fried nestled in a warm pita atop baby greens & sliced tomato splashed with our creamy Caesar dressing. Chicken ($16.95), Mahi, Tuna Steak or Shrimp ($18.95).",
         "price": 16.95,
-        "image": ""
+        "image": "assets/images/menu/pita.jpg"
       },
       {
         "id": 26,
         "name": "Tuna Poke",
         "description": "A heaping helping of cubed sushi grade yellow fin tuna marinated in slightly spicy poke sauce with minced green onion, red onion & red bell pepper served on pineapple rounds & sprinkled with toasted sesame seeds served with crispy wonton chips.",
         "price": 21.95,
-        "image": ""
+        "image": "assets/images/menu/tuna_poke.jpg"
       },
       {
         "id": 27,
@@ -211,28 +211,28 @@
         "name": "Taco Salad",
         "description": "Your choice of fajita seasoned protein atop shredded lettuce, fresh salsa & crisp tortilla chips topped with shredded cheese, guacamole & sour cream served with black beans. Ground Beef or Chicken ($17.95), Mahi or Shrimp ($19.95).",
         "price": 17.95,
-        "image": ""
+        "image": "assets/images/menu/taco_salad.jpg"
       },
       {
         "id": 29,
         "name": "Quesadilla",
         "description": "Your choice of protein, tomato & shredded cheese inside a butter grilled flour tortilla & served with guacamole & sour cream. Cheese ($11.95), Ground Beef or Chicken ($18.95), Mahi, Tuna Steak or Shrimp ($20.95).",
         "price": 11.95,
-        "image": ""
+        "image": "assets/images/menu/quesadilla.jpg"
       },
       {
         "id": 30,
         "name": "Key Lime Pie",
         "description": "The best Key Lime Pie on the island!",
         "price": 6.95,
-        "image": ""
+        "image": "assets/images/menu/key_lime_pie.jpg"
       },
       {
         "id": 31,
         "name": "Deep Fried Key Lime Pie",
         "description": "The best Key Lime Pie on the island, deep fried!",
         "price": 8.95,
-        "image": ""
+        "image": "assets/images/menu/fried_key_lime_pie.jpg"
       }
     ]
   }
