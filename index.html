@@ -96,11 +96,11 @@
 
                 return (
                     <section id="menu" className="py-12 px-4 bg-gray-100">
-                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Satisfy', cursive" }}>
                             Menu
                         </h2>
 
-                        <div className="flex justify-center space-x-4 mb-8" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                        <div className="flex justify-center space-x-4 mb-8" style={{ fontFamily: "'Satisfy', cursive" }}>
                             {categories.map(category => (
                                 <button
                                     key={category}
@@ -171,9 +171,9 @@
                                                     loading="lazy"
                                                 />
                                             )}
-                                            <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Dancing Script', cursive" }}>{item.name}</h3>
-                                            <p className="text-gray-600 text-sm mb-2" style={{ fontFamily: "'Dancing Script', cursive" }}>{item.description}</p>
-                                            <p className="text-gray-800 font-bold" style={{ fontFamily: "'Dancing Script', cursive" }}>${item.price.toFixed(2)}</p>
+                                            <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Satisfy', cursive" }}>{item.name}</h3>
+                                            <p className="text-gray-600 text-sm mb-2" style={{ fontFamily: "'Satisfy', cursive" }}>{item.description}</p>
+                                            <p className="text-gray-800 font-bold" style={{ fontFamily: "'Satisfy', cursive" }}>${item.price.toFixed(2)}</p>
                                         </div>
                                     ))
                                 ) : (
@@ -188,7 +188,7 @@
             function About() {
                 return (
                     <section id="about" className="py-12 px-4">
-                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Dancing Script', cursive" }}>Find Us</h2>
+                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Satisfy', cursive" }}>Find Us</h2>
                         <div className="max-w-3xl mx-auto text-center">
                             <p className="font-semibold">1200 Oceanview Ave., Marathon, FL 33050</p>
                             <p className="font-semibold">Bar & Grill: (305) 743-9204</p>
@@ -228,7 +228,7 @@
 
                 return (
                     <section id="marina" className="py-12 px-4 bg-gray-100">
-                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Satisfy', cursive" }}>
                             Marina Services
                         </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -245,8 +245,8 @@
                                             className="w-16 h-16 mb-4"
                                             loading="lazy"
                                         />
-                                        <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Dancing Script', cursive" }}>{item.title}</h3>
-                                        <p className="text-gray-600 text-sm" style={{ fontFamily: "'Dancing Script', cursive" }}>{item.description}</p>
+                                        <h3 className="text-xl font-semibold mb-2" style={{ fontFamily: "'Satisfy', cursive" }}>{item.title}</h3>
+                                        <p className="text-gray-600 text-sm" style={{ fontFamily: "'Satisfy', cursive" }}>{item.description}</p>
                                     </div>
                                 ))
                             ) : (
@@ -254,7 +254,7 @@
                             )}
                         </div>
 
-                        <h3 className="text-2xl font-bold text-center mt-16 mb-6" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                        <h3 className="text-2xl font-bold text-center mt-16 mb-6" style={{ fontFamily: "'Satisfy', cursive" }}>
                             Photo Gallery
                         </h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -269,7 +269,7 @@
                                     />
                                     </div>
                                     <div className="p-4 text-center">
-                                        <p className="text-gray-700 text-sm font-medium" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                                        <p className="text-gray-700 text-sm font-medium"style={{ fontFamily: "'Satisfy', cursive" }}>
                                             {photo.caption}
                                         </p>    
                                     </div>                                    
@@ -285,7 +285,7 @@
                                         alt={lightboxPhoto.caption}
                                         className="w-full max-h-[80vh] object-contain rounded-md"                                    
                                     />
-                                    <p className="text-white text-center mt-4 text-lg" style={{ fontFamily: "'Dancing Script', cursive" }}> 
+                                    <p className="text-white text-center mt-4 text-lg" style={{ fontFamily: "'Satisfy', cursive" }}> 
                                         {lightboxPhoto.caption}
                                     </p>
                                     <button className="absolute top-2 right-2 text-white text-2xl hover:text-gray-300" onClick={() => setLightboxPhoto(null)}>
@@ -326,7 +326,7 @@
 
                 return (
                     <footer id="socials" className="py-12 px-4 bg-teal-500 text-white">
-                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Dancing Script', cursive" }}>
+                        <h2 className="text-3xl font-bold text-center mb-8" style={{ fontFamily: "'Satisfy', cursive" }}>
                             Socials
                         </h2>
                         <div className="flex justify-center space-x-12">
@@ -386,7 +386,7 @@
                                         key={link.href}
                                         href={link.href}
                                         className="mx-6 relative inline-block text-white hover:text-gray-300 transition-colors duration-300 group"
-                                        style={{ fontFamily: "'Dancing Script', cursive" }}
+                                        style={{ fontFamily: "'Satisfy', cursive" }}
                                     >
                                         {link.label}
                                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-300 transition-all duration-300 group-hover:w-full"></span>
