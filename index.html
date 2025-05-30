@@ -115,13 +115,15 @@
                             Menu
                         </h2>
 
-                        <div className="flex justify-center space-x-4 mb-8 px-4" style={{ fontFamily: "'Satisfy', cursive" }}>
-                            {categories.map(category => (
+                        <div className="grid grid-cols-3 sm:flex sm:justify-center sm:space-x-4 gap-3 mb-8 max-w-xs mx-auto" style={{ fontFamily: "'Satisfy', cursive" }}>
+                            {categories.map((category, index) => (
                                 <button
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
-                                    className={`px-4 py-2 rounded-md text-white transition-colors duration-300 ${
+                                    className={`px-4 py-2 rounded-md text-white text-sm transition-colors duration-300 col-span-1 ${
                                         selectedCategory === category ? 'bg-teal-700' : 'bg-teal-500 hover:bg-teal-500'
+                                    } ${
+                                        index >= 3 ? 'col-start-2' : ''
                                     }`}
                                 >
                                     {category}
@@ -134,12 +136,13 @@
                             <button
                                 onClick={() => {
                                     setDirection('prev');
-                                    setStartIndex(prev => Math.max(prev - itemsPerPage, 0));
+                                    setStartIndex(prev => 
+                                        prev === 0
+                                            ? Math.max(filteredItems.length - itemsPerPage, 0)
+                                            : Math.max(prev - itemsPerPage, 0)
+                                    );
                                 }}
-                                disabled={!canGoPrev}
-                                className={`absolute left-2 sm:-left-20 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-500 opacity-75 hover:opacity-100 transition-all duration-300 flex items-center justify-center shadow-md z-10 ${
-                                    canGoPrev ? 'hover:scale-105' : 'opacity-50 cursor-not-allowed'
-                                }`}
+                                className="absolute left-2 sm:-left-20 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-500 opacity-75 hover:opacity-100 transition-all duration-300 flex items-center justify-center shadow-md z-10 hover:scale-105"
                             >
                                 <img
                                     src="assets/images/arrow-back.svg"
@@ -151,12 +154,13 @@
                             <button
                                 onClick={() => {
                                     setDirection('next');
-                                    setStartIndex(prev => prev + itemsPerPage);
+                                    setStartIndex(prev => 
+                                        prev + itemsPerPage >= filteredItems.length
+                                            ? 0
+                                            : prev + itemsPerPage
+                                    );
                                 }}
-                                disabled={!canGoNext}
-                                className={`absolute right-2 sm:-right-20 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-500 opacity-75 hover:opacity-100 transition-all duration-300 flex items-center justify-center shadow-md z-10 ${
-                                    canGoNext ? 'hover:scale-105' : 'opacity-50 cursor-not-allowed'
-                                }`}
+                                className="absolute right-2 sm:-right-20 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-teal-500 opacity-75 hover:opacity-100 transition-all duration-300 flex items-center justify-center shadow-md z-10 hover:scale-105"
                             >
                                 <img
                                     src="assets/images/arrow-forward.svg"
