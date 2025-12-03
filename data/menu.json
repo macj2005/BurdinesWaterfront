@@ -15,6 +15,13 @@
         "description": "With shredded cheddar jack cheese & raspberry jalapeno dipping sauce. Ask about additional options.",
         "price": 10.95,
         "image": "assets/images/menu/hushpuppies.jpg"
+      },
+      {
+        "id": 32,
+        "name": "Chicken Wings",
+        "description": "Eight wings served drenched with your choice of Buffalo, BBQ, or Teriyaki sauces. Served with blue cheese or ranch.",
+        "price": 12.95,
+        "image": "assets/images/menu/wings.jpeg"
       }
     ]
   },
